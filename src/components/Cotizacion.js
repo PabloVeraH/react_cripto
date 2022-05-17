@@ -22,8 +22,6 @@ const Precio = styled.p`
 const Cotizacion = ({resultado}) => {
     if(Object.keys(resultado).length === 0) return null;
 
-    console.log(resultado)
-
     return ( 
         <ResultadoDiv>
             <Precio>The price is: <span>{resultado.PRICE}</span> </Precio>

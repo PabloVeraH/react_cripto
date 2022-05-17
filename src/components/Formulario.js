@@ -45,7 +45,6 @@ const Formulario = ({guardarMoneda,  guardarCriptomoneda }) => {
         const consultarAPI = async () => {
             let top = Math.floor(Math.random() * 10) + 1;
             const url = `https://min-api.cryptocompare.com/data/top/mktcapfull?limit=${top}&tsym=USD`;
-
             const resultado = await axios.get(url);
 
             guardarCriptomonedas(resultado.data.Data);
